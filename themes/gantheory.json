@@ -20,8 +20,8 @@
         "panel.background": "#080808",
         "panel.focused_border": "#205375",
 
-        "text": "#e4e4e4",
-        "text.muted": "#868686",
+        "text": "#ffffff",
+        "text.muted": "#ffffff",
         "text.placeholder": "#696567",
         "text.disabled": "#696567",
         "text.accent": "#00afff",
