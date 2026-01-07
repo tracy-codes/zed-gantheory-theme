@@ -1,0 +1,20 @@
+name: Release Zed Extension
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    name: Release Zed Extension
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huacnlee/zed-extension-action@v2
+        with:
+          extension-name: gantheory
+          push-to: tracy-codes/extensions
+        env:
+          # Create a personal access token with "repo" & "workflow" scopes
+          # Add it as a secret named COMMITTER_TOKEN in your repo settings
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
